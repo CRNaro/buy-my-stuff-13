@@ -20,6 +20,8 @@ Product.belongsToMany(Tag, {
 Tag.belongsToMany(Product, {
 
 });
+
+// Exporting the built models
 module.exports = {
   Product,
   Category,
