@@ -5,7 +5,7 @@ const { Model, DataTypes } = require("sequelize");
 // Importing the 'sequelize' connection instance from config/connection.js.
 // This will be used to connect to the database.  -->
 const sequelize = require("../config/connection.js");
-//  Declaing a new clall 'Category' that extends the 'Model' class from Sequelize.
+//  Declaring a new call 'Category' that extends the 'Model' class from Sequelize.
 //  This means that 'Category' inherits all the functionality of a Sequelize model.m -->
 class Category extends Model {}
 // Initializing('init') the 'Category' model by passing two objects as arguments.
