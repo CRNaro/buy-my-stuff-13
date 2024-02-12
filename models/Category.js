@@ -15,11 +15,12 @@ Category.init(
   {
     // TODO* define columns
     // looks like the following:
+    id: {
     type: DataTypes.INTEGER,
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
-    id: {},
+    },
     category_name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -35,3 +36,5 @@ Category.init(
 );
 // Export model 'Category' for use in other parts of the application.
 module.exports = Category;
+
+

@@ -52,7 +52,7 @@ router.put('/:id', async (req, res) => {
       },
     });
     if (tagData[0] > 0) {
-      res.status(200).json(message: 'Tag updated!');
+      res.status(200).json({ message: 'Tag updated!' });
     } else {
       res.status(404).json({ message: 'No tag found with that id!' });
       return;
@@ -71,7 +71,7 @@ router.delete('/:id', async (req, res) => {
       },
     });
     if (tagData > 0) {
-      res.status(200).json(message: 'Tag deleted!');  
+      res.status(200).json({ message: 'Tag deleted!' });  
     } else {
       res.status(404).json({ message: 'No tag found with that id!' });
       return;
